@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfront Home Survey</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .carousel-placeholder img, .video-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            position: relative;
+        }
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: url('images/trydis.jpg') no-repeat center/cover;
+            position: relative;
+            border-radius: 8px;
+        }
+        .address-card {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .section {
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .section h2 {
+            background: #0073e6;
+            color: white;
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+        }
+        .subheader {
+            font-size: 16px;
+            color: #666;
+            padding: 10px 15px;
+            background: #f9f9f9;
+            font-weight: bold;
+        }
+        .content {
+            padding: 15px;
+            display: block;
+            background: #fff;
+        }
+        .media-container {
+            display: flex;
+            gap: 10px;
+        }
+        .carousel-placeholder, .video-placeholder {
+            width: 50%;
+            height: 250px;
+            object-fit: contain;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #666;
+            border-radius: 8px;
+        }
+        .cta-button {
+            display: block;
+            width: max-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #0073e6;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .points {
+            text-align: center;
+            font-size: 2em;
+        }
+        .subheader1, .subheader2 {
+            text-align: center;
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        function toggleSection(element) {
+            let content = element.nextElementSibling;
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="address-card">
+                Address redacted for privacy, Bellevue, WA 98004
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>Waterfront Home Survey Report</h1>
+            <div style="text-align: center;">
+                <img src="images/ShoreSxcore.png" alt="Shore Score" style="max-width: 20%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+
+        <div class="header2">
+            <h2>A marine engineer and our AI evaluate the video and sonar data collected, the findings and evaluation are below </h2>
+            <div style="text-align: center;">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 onclick="toggleSection(this)">Dock Condition & Structural Investigation <span>⭐⭐⭐⭐</span></h2>
+            <div class="subheader">All structures on the waterfront are examined</div>
+            <div class="points">We identify: docks, seawalls and any other structures. Pilings and supporting structures.</div>
+            <div class="subheader1">One dock issue identified requiring immediate remediation was observed. </br> Many loose boards that pose a tripping hazard or risk physical injury that need to be replaced or resecured on the dock.</div>
+            <div class="subheader2">The cross beams connecting the pilings on the east pilings, while intact, have significant breaks. </br> All pilings were free from erosion that would compromise structural integrity. </br> No issues identified with piling fasteners of the dock</div>
+            <div class="content">
+                <div class="media-container">
+                    <div class="carousel-placeholder"><img src="images/IMG_7216.jpg" alt="Dock Image" style="max-width:100%; max-height:100%; object-fit:contain; border-radius:8px;"></div>
+                    <div class="video-placeholder"><img src="images/Dock.jpg" alt="Dock Video" style="width:100%; height:100%; border-radius:8px;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 onclick="toggleSection(this)">Beach Condition & Sonar Analysis <span>⭐⭐⭐⭐⭐</span></h2>
+            <div class="subheader">Beach quality, gradation, objects and concerns with the seafloor are examined</div>
+            <div class="points">We identify: beach quality, beach erosion, fish and plant life, seafloor anomalies, objects on the seafloor (for example: abandoned boats, pipes).</div>
+            <div class="subheader1">No beach erosion was identified, no objects of concern were identified on the seafloor.</div>
+            <div class="subheader2">Significant Invasive Eurasian Milfoil was identified that can result in dangerous and undesirable swim conditions from entanglement, as well as boat management difficulty. Since this survey found significant presence in the winter, summer blooms would likely result in a partial takeover of the home's beach</div>
+            <div class="content">
+                <div class="media-container">
+                    <div class="carousel-placeholder"><img src="images/Sonar.png" alt="Sonar Image" style="width:100%; height:100%; border-radius:8px;"></div>
+                    <div class="video-placeholder"><img src="images/Milfoil.jpg" alt="Milfoil Video" style="width:100%; height:100%; border-radius:8px;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 onclick="toggleSection(this)">Swimmability & Points of Interest <span>⭐⭐⭐</span></h2>
+            <div class="subheader">General enjoyment, points of interest, and other considerations are made</div>
+            <div class="points">We identify: geographic points of interest like sewage runoff or boat launches; city records or permits that impact the property; and additional observations</div>
+            <div class="subheader1">Meydenbauer bay is a high traffic inlet with summer boat traffic and invasive species blooms that will impact water recreation activities.</div>
+            <div class="subheader2">A City of Bellevue sewage runoff point is almost directly across the bay of this home, which mostly affects</div>
+            <div class="content">
+                <div class="media-container">
+                    <div class="carousel-placeholder"><img src="images/POIjpeg.jpeg" style="width:100%; height:100%; border-radius:8px;"></div>
+                    <div class="video-placeholder"><img src="images/BellevueSewer.png" alt="Swimmability Video" style="width:100%; height:100%; border-radius:8px;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Contact Us to Discuss Your Report</h2>
+        <p>Understanding the waterfront condition is as important as a home inspection—hidden risks could impact property value, safety, and usability.</p>
+        <a href="#" class="cta-button">Schedule a Call</a>
+    </div>
+</body>
+</html>
